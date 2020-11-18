@@ -2,7 +2,60 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+@media (min-width: 360px) and (max-width: 480px){
+
+header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+}
+
 #first {
+    display: grid;
+    width: 100%;
+    background-color:#F2F2f2;
+}
+
+#second {
+    display: grid;
+    width:100%;
+}
+
+.card, .card3 {
+    box-shadow: 0 4px 8px 0 #9a9c9a;
+    transition: 0.3s;
+    display: flex;
+  }
+
+.container {
+    padding: 4px 20px;
+  }
+
+.fas, .far {
+    color: #0065FC;
+}
+
+#blue {
+    color: #0065FC;
+}
+
+#logo {
+    border: none;
+    background: none;
+}
+
+footer {
+    background-color:#F2F2f2;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+    }
+
+/* #first {
     display: grid;
     width: 50%;
     background-color:#F2F2f2;
@@ -26,4 +79,13 @@ body {
 
 .fas, .far {
     color: #0065FC;
+}
+
+#blue {
+    color: #0065FC;
+}
+
+#logo {
+    border: none;
+    background: none;
 }
