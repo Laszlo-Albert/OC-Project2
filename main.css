@@ -1,3 +1,7 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
 #first {
     display: grid;
     width: 50%;
@@ -10,9 +14,6 @@
     background-color: #fcfcfcec;
 }
 
-div {
-    font-family: Arial, Helvetica, sans-serif;
-}
 .card {
     box-shadow: 0 4px 8px 0 #2b2c2b;
     transition: 0.3s;
