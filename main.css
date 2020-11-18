@@ -5,13 +5,13 @@ body {
 #first {
     display: grid;
     width: 50%;
-    background-color: #f3e8e8d8;
+    background-color:#F2F2f2;
 }
 
 #second {
     display: grid;
     width: 50%;
-    background-color: #fcfcfcec;
+    background-color:#F2F2f2;
 }
 
 .card {
@@ -23,3 +23,7 @@ body {
 .container {
     padding: 4px 20px;
   }
+
+.fas, .far {
+    color: #0065FC;
+}
