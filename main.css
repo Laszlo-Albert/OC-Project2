@@ -38,7 +38,7 @@ header {
 
 .container {
     padding: 4px 20px;
-  }
+  } 
 
 .fas, .far {
     color: #0065FC;
@@ -65,19 +65,18 @@ footer {
     display: inline-block;
     width: 100%;
     max-width: 480px;
-    height: fit-content;
     margin: auto;
     object-fit: cover;
 }
 .wrapper {  
     display: flex;
     flex-wrap: nowrap;
+    height: 2700px;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     align-content: center;
     order: 0;
-    background-color: #a13333;
 }
 
 .card3 {
