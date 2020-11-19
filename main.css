@@ -36,14 +36,6 @@ header {
     padding: 10px;
   }
 
-.card3 {
-    box-shadow: 0 4px 8px 0 #9a9c9a;
-    transition: 0.3s;
-    padding: 10px;
-    height: 200px;
-    width: 100%;
-}
-
 .container {
     padding: 4px 20px;
   }
@@ -69,17 +61,33 @@ footer {
     border: none;
 }
 
-img {
-    max-width: 100%;
+.card3, img {
+    display: inline-block;
+    width: 100%;
+    max-width: 480px;
+    height: fit-content;
+    margin: auto;
+    object-fit: cover;
 }
-.wrapper{
-    background-color: #F2F2f2;
+.wrapper {  
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     align-content: center;
+    order: 0;
+    background-color: #a13333;
+}
 
+.card3 {
+    position: relative;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px 0 #9a9c9a;
+    transition: 0.3s;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
 }
     }
 
