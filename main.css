@@ -55,31 +55,60 @@ header {
 }
 
 .searchbar {
-    background-color: hotpink;
+    background-color: none;
+    border: 1px solid #f2f2f2;
     width: 100%;
     max-width: 480px;
     width: 100%;
-    padding: 15px;
+    padding: 0;
     display: flex;
     justify-content: space-between;
     border-radius: 5px;
 }
 
-.searchbar.input {
-    width: 85%;
-    padding: 15px 20px;
+.searchbar .input {
     border: none;
+    width: 85%;
+    padding: 10px 10px;
     border-radius: 5px;
     font-weight: bold;
 }
 
 .searchbtn {
-    background: #0065FC;
     width: 10%;
     border-radius: 5px;
     position: relative;
     cursor: pointer;
 }
+
+.mapmarker {
+    width: 10%;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    background-color: #F2F2f2;
+}
+
+.searchbtn .fas {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    color: none;
+}
+
+.mapmarker .fas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    color: #574d4d;
+}
+
+
+
 
 #first {
     background-color:#F2F2f2;
