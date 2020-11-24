@@ -3,9 +3,9 @@ body {
     width: 100%;
 }
 
-@media (min-width: 360px) and (max-width: 480px){
+@media (min-width: 360px) and (max-width: 2000px){
 
-.searchbar, .popular {
+.popular {
     display: flex;
 }
 
@@ -16,6 +16,69 @@ header {
     padding: 0;
     top: 0;
     left: 0;
+}
+
+.headerbuttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+.headerbuttons2 {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: stretch;
+}
+
+.underlined {
+    width: 50%;
+    font-size: 20px;
+    background: none;
+    border: 0;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+.underlined:visited {
+    text-decoration: none;
+}
+
+.underlined:hover {
+    text-decoration: none;
+    color: #0065FC;
+    border-bottom: 2px solid #0065FC;
+}
+
+.searchbar {
+    background-color: hotpink;
+    width: 100%;
+    max-width: 480px;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.searchbar.input {
+    width: 85%;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.searchbtn {
+    background: #0065FC;
+    width: 10%;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
 }
 
 #first {
@@ -49,8 +112,10 @@ header {
     color: #0065FC;
 }
 
-#blue {
+#signup {
     color: #0065FC;
+    background: none;
+    border: 0;
 }
 
 #logo {
