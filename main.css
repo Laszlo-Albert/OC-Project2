@@ -9,10 +9,16 @@ body {
 
 @media (min-width: 360px) and (max-width: 2000px){
 
-.popular {
-    display: flex;
+#signup {
+        color: #0065FC;
+        background: none;
+        border: 0;
 }
-
+    
+#logo {
+        border: none;
+        background: none;
+}
 
 header {
     width: 100%;
@@ -135,16 +141,62 @@ header {
 
 /* Styling the first section (Most Popular) */
 
-#first {
-    background-color:#F2F2f2;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+.wrapper2 {
+    display: grid;
+    max-height: 1500px;
+    grid-template-rows: 1fr 2fr 2fr 2fr;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    grid-template-areas: 
+    "title title title title title"
+    "image image text text text"
+    "image1 image1 text1 text1 text1"
+    "image2 image2 text2 text2 text2"
+}
+
+.title {
+    grid-area: title;
+}
+
+.image {
+    grid-area:image;
+    background-image: url("images/hotels/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+    object-fit: cover;
+}
+
+.text {
+    grid-area: text;
+    background-color: tomato;
+}
+
+.image1 {
+    grid-area: image1;
+    <img src="images/hotels/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Hotel Room">
+}
+.text1 {
+    grid-area: text1;
+    background-color: yellowgreen;
+}
+.image2 {
+    grid-area: image2;
+}
+.text2 {
+    grid-area: text2;
+    background-color: wheat;
+}
+
+img {
+    max-width: 100%;
+    max-height: 50%;
+}
+
+.fas, .far {
+    color: #0065FC;
 }
 
 /* Styling the second section (Accomodations in Marseille) */
 
-#second {
+/*#second {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -164,33 +216,12 @@ header {
     padding: 4px 20px;
   } 
 
-.fas, .far {
-    color: #0065FC;
-}
 
-#signup {
-    color: #0065FC;
-    background: none;
-    border: 0;
-}
-
-#logo {
-    border: none;
-    background: none;
-}
-
-footer {
-    background-color:#F2F2f2;
-    width: 100%;
-    padding: 5px 20px;
-    margin: 0;
-    border: none;
-}
 
 .card3, img {
     display: inline-block;
-    width: 100%;
     max-width: 480px;
+    width: 100%;
     margin: auto;
     object-fit: cover;
 }
@@ -213,40 +244,16 @@ footer {
     padding: 0;
     margin: 0;
     overflow: hidden;
-}
-    }
+} 
 
-/* #first {
-    display: grid;
-    width: 50%;
+<img src="images/hotels/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hotel Room">
+
+*/
+
+footer {
     background-color:#F2F2f2;
-}
-
-#second {
-    display: grid;
-    width: 50%;
-    background-color:#F2F2f2;
-}
-
-.card {
-    box-shadow: 0 4px 8px 0 #2b2c2b;
-    transition: 0.3s;
-    display: flex;
-  }
-
-.container {
-    padding: 4px 20px;
-  }
-
-.fas, .far {
-    color: #0065FC;
-}
-
-#blue {
-    color: #0065FC;
-}
-
-#logo {
+    width: 100%;
+    padding: 5px 20px;
+    margin: 0;
     border: none;
-    background: none;
 }
